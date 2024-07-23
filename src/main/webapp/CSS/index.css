@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFA07A 10%, #20B2AA 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 320px;
+    position: relative;
+}
+
+.logo {
+    width: 100px; /* Adjust size of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 20px;
+    transform: rotate(-15deg); /* Rotate the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for rotation and shadow */
+    border: 5px solid #20B2AA; /* Add border */
+    border-radius: 50%; /* Make border circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.logo:hover {
+    transform: rotate(0deg); /* Reset rotation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+h2 {
+    color: #343a40;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #6c757d;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Lift button effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.button:active {
+    background-color: #004080;
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}

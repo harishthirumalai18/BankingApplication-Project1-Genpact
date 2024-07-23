@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #FFA07A 10%, #20B2AA 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Container Styles */
+.dashboard-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+.dashboard-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Button Styles */
+.dashboard-button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.dashboard-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 86, 179, 0.4);
+    color: #e0e0e0;
+}
+
+.dashboard-button:active {
+    background-color: #004494;
+    transform: translateY(1px);
+    color: #ccc;
+}
+
+.logout {
+    background-color: #dc3545;
+}
+
+.logout:hover {
+    background-color: #c82333;
+    color: #e0e0e0;
+}
+
+.logout:active {
+    background-color: #bd2130;
+    color: #ccc;
+}
+
+/* Button Focus Outline */
+.dashboard-button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .dashboard-container h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 30px;
+        width: 80%;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
